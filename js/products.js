@@ -15,7 +15,6 @@ function showList(){
 
     for (let product of html){ 
         append += `
-        <br>
         <div class="list-group-item list-group-item-action">
             <div class="row">
                 <div class="col-3">
