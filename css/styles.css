@@ -9,6 +9,25 @@
   font-weight: bold;
 }
 
+#loginSubmit{
+  background-color:#0d6efd;
+  color: white;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 5px;
+  padding: 1%;
+  letter-spacing: 0.5px;
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#loginSubmit:hover{
+  border-style: solid;
+  border-color: #92bffd;
+}
+
 nav a {
   text-decoration: none;
 }
