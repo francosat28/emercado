@@ -6,6 +6,7 @@ const PRODUCT_INFO_COMMENTS_URL = "https://japceibal.github.io/emercado-api/prod
 const CART_INFO_URL = "https://japceibal.github.io/emercado-api/user_cart/";
 const CART_BUY_URL = "https://japceibal.github.io/emercado-api/cart/buy.json";
 const EXT_TYPE = ".json";
+const user = localStorage.getItem("itm");
 
 let showSpinner = function(){
   document.getElementById("spinner-wrapper").style.display = "block";
@@ -39,3 +40,10 @@ let getJSONData = function(url){
         return result;
     });
 }
+
+document.getElementById("drop").innerHTML = JSON.parse(localStorage.getItem("usuario"))
+
+if(user == null){
+  location.href = "index.html"
+  }
+  // con localStorage remover item de usuario, para no tener que togglear nombres de index y login.

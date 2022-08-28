@@ -1,19 +1,20 @@
-const AUTOSURL = "https://japceibal.github.io/emercado-api/cats_products/101.json";
+let catAll = localStorage.getItem("catID");
+const catURL = `https://japceibal.github.io/emercado-api/cats_products/${catAll}.json`;
 let list = [];
 
 document.addEventListener("DOMContentLoaded", function(e){
-    getJSONData(AUTOSURL).then(function(result){
+    getJSONData(catURL).then(function(result){
         if (result.status === "ok")
-        {html = result.data.products;
+        {html = result.data;
             showList();}
     });
 });
 
 function showList(){
-
+    document.getElementById("pName").innerHTML = html.catName;
     let append = "";
 
-    for (let product of html){ 
+    for (let product of html.products){ 
         append += `
         <div class="list-group-item list-group-item-action">
             <div class="row">
@@ -33,6 +34,6 @@ function showList(){
             </div>
         </div>
         `
-        document.getElementById("cargarAutos").innerHTML = append; 
+        document.getElementById("loadCat").innerHTML = append; 
     }
 }
