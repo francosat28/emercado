@@ -11,7 +11,4 @@ document.addEventListener("DOMContentLoaded", function(){
         localStorage.setItem("catID", 103);
         window.location = "products.html"
     });
-    
-    let itm = localStorage.getItem("usuario");
-    document.getElementById("user").innerHTML = JSON.parse(itm);
 });

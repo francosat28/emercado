@@ -5,6 +5,18 @@
   font-family: 'Raleway', serif !important;
 }
 
+h3{
+  font-family:bold;
+}
+
+#img :hover{
+  position:relative;
+  justify-content:baseline ;
+  height: 22rem;
+  width: 34rem;
+  cursor:zoom-in;
+}
+
 .jumbotron .display-4 {
   font-weight: bold;
 }

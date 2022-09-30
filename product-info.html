@@ -39,10 +39,11 @@
             Dropdown
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Mis compras</a></li>
-            <li><a class="dropdown-item" href="#">Modificar perfil</a></li>
+            <li><a class="dropdown-item" href="cart.html">Mis compras</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+            <li><a class="dropdown-item" href="my-profile.html">Modificar perfil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
           </ul>
         </li>
           <li class="nav-item">
@@ -53,11 +54,30 @@
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+    <div class="container" id="pInfo">
+    </div><hr>
+    <div class="container" >
+      <h3>Comentarios</h3>
+      <ul class="list-group" id="commInfo">
+      </ul>
+      <br>
+      <h3>Comentar</h3>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label lead">Tu email:</label>
+      <input type="email" class="form-control" style="width:98%;" id="exampleFormControlInput1" placeholder="ejemplo@gmail.com">
     </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label lead">Tu opinión:</label>
+      <textarea class="form-control" style="width:98%;" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="lead">Tu puntuación:</div>
+    <input type="range" name="pRange" max="5" min="1" id="pRange">
+    <br><br>
+    <input type="submit" class="btn btn-primary" value="Enviar comentario">
+    </div>
+    <br>
+    <hr>
+    <div id="related"></div>
   </main>
   <footer class="text-muted">
     <div class="container">

@@ -20,17 +20,20 @@
 <div  class="text-center">
   <img src="img/login.png" style="width: 25%; margin-top: 50px; margin-bottom: -1%;">
 </div>
-  <main class="mt-5">
+  <main class="mt-4">
     <div class="container">
       <div class="text-center">
-        <h3 style="margin-bottom: 20px; font-size: 220%;"><b>Inicio de sesión</b></h3>
+        <h3 class="display-4" style="margin-bottom: 20px;color:#229fbc"><b>Inicio de sesión</b></h3>
         <form action="login.html" id="form" onsubmit="return loggin()">
-          <h6 style="font-size: 120%; margin-bottom: -7px;"><b>Email</b></h6>
-          <input autofocus type="email" name="Email" id="mail" placeholder="    Email" style="width: 28%; padding-bottom: 10px;padding-top: 10px; margin-top: 10px; margin-bottom: 10px;">
+          <h6 style="color:#54a396;font-size: 120%; margin-bottom: -7px;"><b>Email</b></h6>
+          <input autofocus type="email" name="Email" id="mail" placeholder="    Email" class="is-invalid"
+           style="width: 28%; padding-bottom: 10px;padding-top: 10px; margin-top: 10px; margin-bottom: 10px;">
           <br>
-          <h6 style="font-size: 120%; margin-bottom: -7px;"><b>Contraseña</b></h6> 
-          <input type="password" name="Password" id="pass" placeholder="    Contraseña" style="width: 28%; padding-bottom: 10px;padding-top: 10px; margin-top: 10px;">
-          <br>
+          <h6 style="color:#54a396;font-size: 120%; margin-bottom: -7px;"><b>Contraseña</b></h6> 
+          <input type="password" name="Password" id="pass" placeholder="    Contraseña" class="is-invalid" 
+          style="width: 28%; padding-bottom: 10px;padding-top: 10px; margin-top: 10px;">
+          <br><br>
+          <a href="forgetPass.html"><h6>¿Olvidaste tu contraseña?</h6></a>
           <br>
           <input type="submit" value="Ingresar" id="loginSubmit">
         </form>
