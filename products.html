@@ -58,11 +58,19 @@
             <div class="col text-end">
               <div class="btn-group btn-group-toggle mb-4" data-bs-toggle="buttons">
                 <input type="radio" class="btn-check" name="options" id="sortAsc">
+<<<<<<< Updated upstream
                 <label class="btn btn-light" for="sortAsc"><i class="fas fa-sort-amount-up"></i>$ Mayor precio</label>
                 <input type="radio" class="btn-check" name="options" id="sortDesc">
                 <label class="btn btn-light" for="sortDesc"><i class="fas fa-sort-amount-down"></i>$ Menor precio</label>
                 <input type="radio" class="btn-check" name="options" id="sortByCount">
                 <label class="btn btn-light" for="sortByCount"><i class="fas fa-sort-amount-down mr-1"></i> Más vendidos</label>
+=======
+                <label class="btn btn-light" for="sortAsc">A-Z</label>
+                <input type="radio" class="btn-check" name="options" id="sortDesc">
+                <label class="btn btn-light" for="sortDesc">Z-A</label>
+                <input type="radio" class="btn-check" name="options" id="sortByCount" checked>
+                <label class="btn btn-light" for="sortByCount"><i class="fas fa-sort-amount-down mr-1"></i></label>
+>>>>>>> Stashed changes
               </div>
             </div>
           </div>
@@ -73,6 +81,7 @@
                   <p class="font-weight-normal text-end my-2">Precio</p>
                 </div>
                 <div class="col">
+<<<<<<< Updated upstream
                   <input class="form-control" type="number" placeholder="min." id="min">
                 </div>
                 <div class="col">
@@ -82,6 +91,17 @@
                   <div class="btn-group" role="group">
                     <button class="btn btn-light btn-block" id="filter">Filtrar</button>
                     <button class="btn btn-link btn-sm" id="clean">Limpiar</button>
+=======
+                  <input class="form-control" type="number" placeholder="min." id="rangeFilterCountMin">
+                </div>
+                <div class="col">
+                  <input class="form-control" type="number" placeholder="máx." id="rangeFilterCountMax">
+                </div>
+                <div class="col-3 p-0">
+                  <div class="btn-group" role="group">
+                    <button class="btn btn-light btn-block" id="rangeFilterCount">Filtrar</button>
+                    <button class="btn btn-link btn-sm" id="clearRangeFilter">Limpiar</button>
+>>>>>>> Stashed changes
                   </div>
                 </div>
               </div>
@@ -92,6 +112,10 @@
             </div>
           </div>
         </div>
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         <div class="container">
         <div id="loadCat">
         </div>
