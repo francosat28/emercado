@@ -108,8 +108,6 @@ function setDogID(id) {
     window.location = "product-info.html"
 }
 
-
-
 function sortCategories(criteria, array){
     let result = [];
     if (criteria === ORDER_ASC_BY_NAME)
