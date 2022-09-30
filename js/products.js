@@ -90,7 +90,6 @@ function classify(criteria, ordProd){
             return b.soldCount-a.soldCount;
         });
     }
-<<<<<<< Updated upstream
     return result;
 }
 
@@ -109,8 +108,6 @@ function setDogID(id) {
     window.location = "product-info.html"
 }
 
-=======
-}
 
 
 function sortCategories(criteria, array){
@@ -141,4 +138,3 @@ function sortCategories(criteria, array){
 
     return result;
 }
->>>>>>> Stashed changes
