@@ -1,13 +1,15 @@
 let dogID = localStorage.getItem("dogID");
 let res = {}
 let Cres = {}
-const CdogURL = `https://japceibal.github.io/emercado-api/products_comments/${dogID}.json`
 const dogURL = `https://japceibal.github.io/emercado-api/products/${dogID}.json`;
+const CdogURL = `https://japceibal.github.io/emercado-api/products_comments/${dogID}.json`
 
 document.addEventListener("DOMContentLoaded", ()=>{
+  
     getJSONData(dogURL).then((Response)=>{
         res = Response.data;
         pInfo.innerHTML = `
+
       <h1 id="name" class="pt-2 m-3" style="font-size:4rem; color:#626266;float:right;">${res.name}</h1>
         <hr>
       <h3>Precio</h3>
@@ -26,12 +28,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
         <div class="img-fluid img-thumbnail" id="img" style="width:20rem;">
             <img src="${img}" class="card-img-top"></img>
         </div>
+
         `
-    }}) 
+    }
+      for(let rel of res.relatedProducts){
+        related.innerHTML += `
+        <div onclick="" class="card m-lg-3" style="width:20rem;">
+            <img src="${rel.image}" class="card-img-top "></img>
+            <div>${rel.name}</div>
+            </div>
+        `
+  }}) 
     getJSONData(CdogURL).then((Response)=>{
         Cres = Response.data;
         for(let comm of Cres){
         commInfo.innerHTML += `
+
     <li class="list-group-item d-flex justify-content-between align-items-start" style="width:98%;">
         <div class="ms-2 me-auto">
             <div class="fw-bold">${comm.user} - ${comm.dateTime} - ${star(comm.score)}
@@ -39,6 +51,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 ${comm.description}
             </div>
     </li>
+
     `
         }
        function star(sc){
