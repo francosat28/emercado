@@ -31,7 +31,6 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="drop">
-              Dropdown
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="cart.html" id="bought">Mis compras</a></li>
@@ -47,9 +46,22 @@
   </nav>
   <main>
     <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+     <div class="text-center" style="font-size: 300%;">Carrito de compras</div>
+     <div class="lead" style="font-size: 200%;">Articulos a comprar</div>
+     <hr>
+     <!---->
+     <hr>
+     <div class="lead" style="font-size: 200%;">Tipo de envío</div>
+     <input type="checkbox" name="premium" id="premium"><p>Premium: 2 a 5 días (15%)</p>
+     <input type="checkbox" name="express" id="express"><p>Express: 5 a 8 días (7%)</p>
+     <input type="checkbox" name="standard" id="standard"><p>Standard: 12 a 15 días (5%)</p>
+     <div class="lead" style="font-size: 200%;">Dirección de envío</div>
+     <p>Calle</p>
+     <input type="text" name="calle" id="calle">
+     <p>Número de puerta</p>
+     <input type="number" name="nDePuerta" id="nDePuerta">
+     <p>Esquina</p>
+     <input type="text" name="esquina" id="esquina">
     </div>
   </main>
   <footer class="text-muted">

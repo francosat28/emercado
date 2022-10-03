@@ -51,3 +51,8 @@ logout.addEventListener("click", ()=>{
 if(user==undefined){
   window.location.href="index.html"
 }
+
+function setProd(id) {
+  localStorage.setItem("dogID", id);
+  window.location = "product-info.html"
+}

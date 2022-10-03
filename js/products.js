@@ -56,7 +56,7 @@ function showList(array){
     pName.innerHTML = html.catName;
     for (let product of array){ 
         append += `
-        <div onclick="setDogID(${product.id})" class="list-group-item list-group-item-action">
+        <div onclick="setProd(${product.id})" class="list-group-item list-group-item-action">
             <div class="row">
             <div class="col-3">
             <img src="` + product.image + `" alt="product image" class="img-thumbnail">
@@ -103,11 +103,6 @@ function sortAndShow(criteria, ordProd){
     showList(ordProd);
 }
 
-function setDogID(id) {
-    localStorage.setItem("dogID", id);
-    window.location = "product-info.html"
-}
-
 function sortCategories(criteria, array){
     let result = [];
     if (criteria === ORDER_ASC_BY_NAME)
@@ -133,6 +128,5 @@ function sortCategories(criteria, array){
             return 0;
         });
     }
-
     return result;
 }

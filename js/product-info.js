@@ -22,20 +22,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
       <h3>Cantidad de vendidos</h3>
         <div class="lead">${res.soldCount}</div> 
       <h3>Imágenes ilustrativas</h3>
-        <div class="row mr-4" style="" id="imgInfo"></div>`
+        <div class="row mr-4" id="imgInfo"></div>`
       for(let img of res.images){
         imgInfo.innerHTML += `
-        <div class="img-fluid img-thumbnail" id="img" style="width:20rem;">
+        <div class="img-fluid img-thumbnail" id="img" style="width:25%;">
             <img src="${img}" class="card-img-top"></img>
         </div>
-
         `
     }
       for(let rel of res.relatedProducts){
         related.innerHTML += `
-        <div onclick="" class="card m-lg-3" style="width:20rem;">
-            <img src="${rel.image}" class="card-img-top "></img>
-            <div>${rel.name}</div>
+        <div onclick="setProd(${rel.id})" class="card m-lg-3 container"  id="rel" style="width:20rem;">
+            <img src="${rel.image}" class="card-img-top"></img>
+            <div style="font-size:150%;" class="text-center">${rel.name}</div>
             </div>
         `
   }}) 

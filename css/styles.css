@@ -9,6 +9,13 @@ h3{
   font-family:bold;
 }
 
+#rel :hover{
+  position:static;
+  cursor: pointer;
+  color: #0087F7;
+  
+}
+
 #img :hover{
   position:relative;
   justify-content:baseline ;
